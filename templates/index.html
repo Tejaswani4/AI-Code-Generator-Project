@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Code Generator</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🚀 AI Code Generator</h1>
+
+<p class="subtitle">Generate programming solutions instantly using AI</p>
+
+<form action="/generate" method="post">
+
+<textarea name="prompt" placeholder="Example: Write a Python program to check prime number..." required></textarea>
+
+<br>
+
+<button type="submit">⚡ Generate Code</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

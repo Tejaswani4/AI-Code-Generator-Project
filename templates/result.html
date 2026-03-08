@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Generated Code</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>💻 Generated Code</h1>
+
+<div class="code-container">
+
+<pre id="code">{{ code }}</pre>
+
+</div>
+
+<div class="btn-group">
+
+<button onclick="copyCode()">📋 Copy Code</button>
+
+<a href="/" class="back">🔄 Generate Another</a>
+
+</div>
+
+</div>
+
+<script>
+
+function copyCode(){
+let code=document.getElementById("code").innerText;
+navigator.clipboard.writeText(code);
+alert("Code copied!");
+}
+
+</script>
+
+</body>
+</html>
